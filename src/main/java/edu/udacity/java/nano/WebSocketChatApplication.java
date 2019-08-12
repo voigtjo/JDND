@@ -40,12 +40,13 @@ public class WebSocketChatApplication {
     public ModelAndView index(String username, HttpServletRequest request) throws UnknownHostException {
         //TODO: add code for login to chatroom.
         logger.info("# index method: call");
-        if (StringUtils.isEmpty(username)) {
-            username = "NO user";
+        if (username == null || username.length() == 0) {
+            return new ModelAndView("login");
         }
         ModelAndView mav = new ModelAndView("chat");
         mav.addObject("username", username);
-        String webSocketUrl = "ws://"+ InetAddress.getLocalHost().getHostAddress()+":"+request.getServerPort()+request.getContextPath()+"/chat";
+
+        String webSocketUrl = "ws://localhost:8080/chat";
         mav.addObject("webSocketUrl", webSocketUrl);
         return mav;
     }

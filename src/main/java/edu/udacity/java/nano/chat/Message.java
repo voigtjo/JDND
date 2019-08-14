@@ -5,12 +5,8 @@ package edu.udacity.java.nano.chat;
  * WebSocket message model
  */
 public class Message {
-    // TODO: add message model.
-    public static final String ENTER = "ENTER";
-    public static final String CHAT = "CHAT";
-    public static final String LEAVE = "LEAVE";
 
-    private String type;
+    private MessageType type;
     private String username;
     private String msg;
     private int onlineCount;
@@ -19,7 +15,7 @@ public class Message {
     public Message() {
     }
 
-    public Message(String type, String username, String msg, int onlineCount) {
+    public Message(MessageType type, String username, String msg, int onlineCount) {
         this.type = type;
         this.username = username;
         this.msg = msg;
@@ -27,11 +23,11 @@ public class Message {
     }
 
 
-    public String getType() {
+    public MessageType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(MessageType type) {
         this.type = type;
     }
 

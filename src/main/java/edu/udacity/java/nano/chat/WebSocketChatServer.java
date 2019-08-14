@@ -30,7 +30,6 @@ public class WebSocketChatServer {
     private static Map<String, Session> onlineSessions = new ConcurrentHashMap<>();
 
     private static void sendMessageToAll(String msg) {
-        //TODO: add send message method.
         for (String sessionId : onlineSessions.keySet()){
             Session session = onlineSessions.get(sessionId);
             session.getAsyncRemote().sendText(msg);
@@ -42,11 +41,11 @@ public class WebSocketChatServer {
      */
     @OnOpen
     public void onOpen(Session session) throws JsonProcessingException {
-        //TODO: add on open connection.
+
         logger.info("# onOpen method: call; session.id= " + session.getId());
         onlineSessions.put(session.getId(), session);
         Message message = new Message();
-        message.setType(Message.ENTER);
+        message.setType(MessageType.ENTER);
         message.setOnlineCount(onlineSessions.size());
         ObjectMapper mapper = new ObjectMapper();
         String msg = mapper.writeValueAsString(message);
@@ -59,11 +58,10 @@ public class WebSocketChatServer {
      */
     @OnMessage
     public void onMessage(Session session, String jsonStr) throws IOException {
-        //TODO: add send message.
         logger.info("# onMessage method: call; jsonStr= " + jsonStr + ", session.id= " + session.getId());
         ObjectMapper mapper = new ObjectMapper();
         Message message = mapper.readValue(jsonStr, Message.class);
-        message.setType(Message.CHAT);
+        message.setType(MessageType.CHAT);
         message.setOnlineCount(onlineSessions.size());
         String msg = mapper.writeValueAsString(message);
         sendMessageToAll(msg);
@@ -74,11 +72,10 @@ public class WebSocketChatServer {
      */
     @OnClose
     public void onClose(Session session) throws JsonProcessingException {
-        //TODO: add close connection.
         logger.info("# onClose method: call; session.id= " + session.getId());
         onlineSessions.remove(session.getId());
         Message message = new Message();
-        message.setType(Message.LEAVE);
+        message.setType(MessageType.LEAVE);
         message.setOnlineCount(onlineSessions.size());
         ObjectMapper mapper = new ObjectMapper();
         String msg = mapper.writeValueAsString(message);

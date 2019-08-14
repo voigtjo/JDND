@@ -16,6 +16,11 @@ class in chat module. Make sure you cover all there basic actions.
 ### Complete WebSocketChatServer
 Implement all TODOs inside WebSocketChatServer follow each method description.
 
+### Build the application with command
+- mvn clean
+- mvn -Dmaven.test.skip=true package
 ### Run the application with command
-mvn build; mvn spring-boot:run
+- java -jar target\chatroom-starter-0.0.1-SNAPSHOT.jar
+### Test the application with command
+- mvn test
 

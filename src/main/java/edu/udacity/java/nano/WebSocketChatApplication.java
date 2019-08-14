@@ -2,6 +2,9 @@ package edu.udacity.java.nano;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -19,6 +22,11 @@ import java.net.UnknownHostException;
 public class WebSocketChatApplication {
     Logger logger = LoggerFactory.getLogger(WebSocketChatApplication.class);
 
+    @Value("${server.port}")
+    private String serverPort;
+    @Value("${server.ip}")
+    private String serverIp;
+
     public static void main(String[] args) {
         SpringApplication.run(WebSocketChatApplication.class, args);
     }
@@ -35,10 +43,11 @@ public class WebSocketChatApplication {
 
     /**
      * Chatroom Page
+     *
      */
     @GetMapping("/index")
     public ModelAndView index(String username, HttpServletRequest request) throws UnknownHostException {
-        //TODO: add code for login to chatroom.
+        //login to chatroom.
         logger.info("# index method: call");
         if (username == null || username.length() == 0) {
             return new ModelAndView("login");
@@ -46,7 +55,12 @@ public class WebSocketChatApplication {
         ModelAndView mav = new ModelAndView("chat");
         mav.addObject("username", username);
 
-        String webSocketUrl = "ws://localhost:8080/chat";
+        // Websocket connection used from chat.html
+        // var webSocket = new WebSocket(/*[[${webSocketUrl}]]*/ 'ws://localhost:8080/chat');
+        // webSocket.onmessage(event)
+        // to receive chat messages from server
+        String webSocketUrl = "ws://" + serverIp + ":" + serverPort + "/chat";
+        logger.info("webSocketUrl= " + webSocketUrl);
         mav.addObject("webSocketUrl", webSocketUrl);
         return mav;
     }

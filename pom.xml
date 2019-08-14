@@ -38,7 +38,7 @@
         <dependency>
             <groupId>org.webjars.npm</groupId>
             <artifactId>mdui</artifactId>
-            <version>0.4.0</version>
+            <version>0.4.3</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
@@ -64,6 +64,18 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.1.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
         </dependency>
     </dependencies>
 

@@ -2,35 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dd92100-ba21-4a43-8ff5-179482a72027" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/selenium-java-3.141.59.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/selenium-server-standalone-3.141.59.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/MessageType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/udacity/selenium/test/WebSocketChatTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_mdui_0_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_npm_mdui_0_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatroom-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom-starter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/WebSocketChatApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/WebSocketChatApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/WebSocketChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/WebSocketChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/chatroom-starter-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/chatroom-starter-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/chatroom-starter-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/chatroom-starter-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/WebSocketChatApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/WebSocketChatApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/WebSocketChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/WebSocketChatServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/udacity/selenium/test/WebSocketChatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/udacity/selenium/test/WebSocketChatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/chatroom-starter-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/chatroom-starter-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.udacity.selenium.test.WebSocketChatTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.udacity.selenium.test.WebSocketChatTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.udacity.selenium.test.WebSocketChatTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.udacity.selenium.test.WebSocketChatTest.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring-boot-unit-tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

@@ -1,4 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: edu.udacity.selenium.test.WebSocketChatTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.911 s - in edu.udacity.selenium.test.WebSocketChatTest
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 39.17 s <<< FAILURE! - in edu.udacity.selenium.test.WebSocketChatTest
+messagingTest(edu.udacity.selenium.test.WebSocketChatTest)  Time elapsed: 13.806 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=http%3A//localhost%3A8080/index%3Fusername%3DAdmin&c=UTF-8&f=regular&d=Firefox%20kann%20keine%20Verbindung%20zu%20dem%20Server%20unter%20localhost%3A8080%20aufbauen.
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'SURFACE-BLAU', ip: '10.15.170.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190813150448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7652, moz:profile: C:\Users\Jörn\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cec2d01d-d6c0-4cd2-a6ae-de445f87086a
+	at edu.udacity.selenium.test.WebSocketChatTest.messagingTest(WebSocketChatTest.java:76)
+
+clearTest(edu.udacity.selenium.test.WebSocketChatTest)  Time elapsed: 13.275 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=http%3A//localhost%3A8080/index%3Fusername%3DAdmin&c=UTF-8&f=regular&d=Firefox%20kann%20keine%20Verbindung%20zu%20dem%20Server%20unter%20localhost%3A8080%20aufbauen.
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'SURFACE-BLAU', ip: '10.15.170.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190813150448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15560, moz:profile: C:\Users\Jörn\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2261a9b3-b09e-404b-bf8a-3dab54a62d55
+	at edu.udacity.selenium.test.WebSocketChatTest.clearTest(WebSocketChatTest.java:96)
+
+joinAndOnlineCountTest(edu.udacity.selenium.test.WebSocketChatTest)  Time elapsed: 12.01 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+Reached error page: about:neterror?e=connectionFailure&u=http%3A//localhost%3A8080/index%3Fusername%3DAdmin&c=UTF-8&f=regular&d=Firefox%20kann%20keine%20Verbindung%20zu%20dem%20Server%20unter%20localhost%3A8080%20aufbauen.
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'SURFACE-BLAU', ip: '10.15.170.52', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190813150448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 10944, moz:profile: C:\Users\Jörn\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9b9e116d-a333-4b43-b8eb-147b6e285525
+	at edu.udacity.selenium.test.WebSocketChatTest.joinAndOnlineCountTest(WebSocketChatTest.java:62)
+
